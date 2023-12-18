@@ -10,7 +10,7 @@ async function fetchAPI(word) {
     infoTextEl.style.display = "block";
     meaningContainerEl.style.display = "none";
     infoTextEl.innerText = `Searching the meaning of "${word}"`;
-    const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`; //API USED for Fetching Words
     const result = await fetch(url).then((res) => res.json());
 
     if (result.title) {
